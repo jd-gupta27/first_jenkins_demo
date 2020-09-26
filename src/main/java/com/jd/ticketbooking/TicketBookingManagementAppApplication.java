@@ -24,7 +24,7 @@ public class TicketBookingManagementAppApplication extends SpringBootServletInit
 
 	    @Override
 	    protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {
-		return builder.sources(Application.class);
+		return builder.sources(TicketBookingManagementAppApplication.class);
             }
 	@Override
 	public void run(String... args) throws Exception {
