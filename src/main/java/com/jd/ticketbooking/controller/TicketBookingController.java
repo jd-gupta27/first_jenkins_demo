@@ -40,6 +40,10 @@ public class TicketBookingController {
 	public Iterable<Ticket> getAllTickets(){
 		return ticketBookingService.getAllTicket();
 	}
+	@GetMapping(value = "/home")
+	public String getAllTickets(){
+		return "You are welcome";
+	}
 	@PutMapping(value = "/updateTicket")
 	public Ticket updateTicket(@RequestBody Ticket ticket) {
 		return ticketBookingService.updateTicket(ticket);
