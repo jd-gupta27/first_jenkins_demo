@@ -41,7 +41,7 @@ public class TicketBookingController {
 		return ticketBookingService.getAllTicket();
 	}
 	@GetMapping(value = "/home")
-	public String getAllTickets(){
+	public String home(){
 		return "You are welcome";
 	}
 	@PutMapping(value = "/updateTicket")
